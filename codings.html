@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMANSHU KUMAR || CODING PROJECTS</title>
+    <link rel="icon" type="image/png" href="assets/png's/Favicon.png">
+    <script src="https://kit.fontawesome.com/3efc37e746.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="GD.css">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<script>
+    window.addEventListener("load", function () {
+        document.getElementById("preloader").style.display = "none";
+        document.body.classList.remove("no-scroll");
+    });
+
+    // Block scrolling when page is loading
+    document.body.classList.add("no-scroll");
+    </script>
+
+    <header class="header">
+        <a href="index.html" class="logo">H</a>
+        <div class="menu-icon" onclick="toggleNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#skills">Skills</a>
+            <div class="dropdown">
+                <a href="#" id="projects-link" class="active">Coding Projects</a>
+                <div class="dropdown-content" id="projects-dropdown">
+                    <a href="GD.html">Designing Projects</a>
+                    <a href="gallery.html">Photography</a>
+                    <a href="portfolio.html">Video Editing Projects</a>
+                    <a href="codings.html">Coding Projects</a>
+                </div>
+            </div>
+            <a href="index.html#contact">Contact</a> 
+        </nav>
+    </header>
+
+    <!-- Video Editing Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="center-text">
+            <h2 class="heading">Coding<span> Projects</span></h2>
+        </div>
+        <div class="portfolio-content">
+
+            <!-- Video Project 1 -->
+            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
+                <div class="video-container" data-video-id="1KrxnRKOiMToIntze6B1bb2bilLR_wGWP">
+                    <video class="hover-video" muted loop playsinline preload="auto" poster="Thumbnails/GC-HOME.png">
+                        <source src="#" type="video/mp4">
+                    </video>
+                </div>
+                <h4>GC Home - A sleek and modern smart home website that showcases innovative home automation solutions, providing convenience and control at your fingertips.</h4>
+                <div class="link" id="Links">
+                    <a href="https://hk-sinha.github.io/gc-home/" >Visit Site <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://github.com/hk-sinha/gc-home" >Show Code</a>
+                </div>
+                
+            </div>
+
+            <!-- Video Project 2 -->
+            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
+                <div class="video-container" data-video-id="18q2dqdj88DV6pe57nIfl8vJtyI-snTBF">
+                    <video class="hover-video" muted loop playsinline preload="auto" poster="Thumbnails/Reve.png">
+                        <source src="#" type="video/mp4">
+                    </video>
+                </div>
+                <h4>Reve Automation LLP. - A professional website designed for an IoT company, highlighting its cutting-edge technology, services, and innovative solutions in automation and AI.</h4>
+                <div class="link">
+                    <a href="https://hk-sinha.github.io/reveautomation/">Visit Site <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://github.com/hk-sinha/reveautomation" >Show Code</a>
+
+                </div>
+            </div>
+
+            <!-- Video Project 3 -->
+            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
+                <div class="video-container" data-video-id="1iRhVRAnfZN_gQy9sE-hQ9S1y0HAiXne7">
+                    <video class="hover-video" muted loop poster="Thumbnails/TWD.png">
+                        <source src="#" type="video/mp4">
+                    </video>
+                </div>
+                <h4>The Wheel Deal - A dynamic car rental website with a stylish UI/UX, making it easy for users to browse, book, and rent vehicles effortlessly.</h4><br>
+                <div class="link">
+                    <a href="https://hk-sinha.github.io/thewheeldeal/">Visit Site <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://github.com/hk-sinha/thewheeldeal" >Show Code</a>
+
+                </div>
+            </div>
+
+            <!-- Video Project 3 -->
+            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
+                <div class="video-container" data-video-id="1oVOaWPd_gmvIh6iLYQ6fAJ4qWMShlVXV">
+                    <video class="hover-video" muted loop playsinline preload="auto" poster="Thumbnails/E-commerce.png">
+                        <source src="#" type="video/mp4">
+                    </video>
+                </div>
+                <h4>E-COMMERCE - A beautifully designed online shopping platform for jewelry, featuring an elegant and user-friendly interface to enhance the shopping experience.</h4>
+                <div class="link">
+                    <a href="https://github.com/hk-sinha/e-commerce" >Show Code </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Popup Video Player -->
+    <div id="video-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <iframe id="popup-video" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const videoContainers = document.querySelectorAll(".video-container");
+    const watchNowButtons = document.querySelectorAll(".watch-now");
+    const popup = document.getElementById("video-popup");
+    const popupVideo = document.getElementById("popup-video");
+    const closePopup = document.querySelector(".popup .close");
+
+    // Play video on hover
+    videoContainers.forEach(container => {
+        const video = container.querySelector(".hover-video");
+         // Ensure the video is loaded before playing
+            video.addEventListener("canplaythrough", () => {
+            console.log("Video is ready to play:", video.src);
+        });
+        container.addEventListener("mouseenter", function () {
+            if (video.readyState >= 2) {  // Ensure video is ready
+                video.muted = true;
+                video.play().catch(error => console.log("Autoplay Blocked:", error));
+            }
+        });
+
+        container.addEventListener("mouseleave", function () {
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
+
+    // Open popup video player
+    watchNowButtons.forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            const videoId = this.getAttribute("data-video-id");
+            popupVideo.src = `https://drive.google.com/file/d/${videoId}/preview`;
+            popup.style.display = "block";
+        });
+    });
+
+    // Close popup
+    closePopup.addEventListener("click", function () {
+        popup.style.display = "none";
+        popupVideo.src = "";
+    });
+
+    // Close popup when clicking outside
+    popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+            popupVideo.src = "";
+        }
+    });
+});
+
+    </script>
+
+<script>
+    function toggleNavbar() {
+const navbar = document.querySelector('.navbar');
+navbar.classList.toggle('active');
+
+const navLinks = document.querySelectorAll('.navbar a');
+navLinks.forEach(link => {
+link.addEventListener('click', () => {
+const navbar = document.querySelector('.navbar');
+navbar.classList.remove('active'); // Hide the navbar
+});
+});
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    // Disable Right-Click
+    document.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+        alert("Right-click is disabled!");
+    });
+
+    // Disable F12, Ctrl+Shift+I, Ctrl+U, Ctrl+S, Ctrl+P
+    document.addEventListener("keydown", function(event) {
+        if (
+            event.key === "F12" || 
+            (event.ctrlKey && event.shiftKey && event.key === "I") ||
+            (event.ctrlKey && event.shiftKey && event.key === "i") || 
+            (event.ctrlKey && event.key === "U") || 
+            (event.ctrlKey && event.key === "S") || 
+            (event.ctrlKey && event.key === "P") ||
+            (event.ctrlKey && event.key === "u") ||
+            (event.ctrlKey && event.key === "s") ||
+            (event.ctrlKey && event.key === "p")
+        ) {
+            event.preventDefault();
+            alert("Inspecting elements is disabled!");
+        }
+    });
+</script>
+
+    <script src="main.js"></script>
+</body>
+</html>
