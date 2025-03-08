@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="GD.css">
 </head>
 <body>
+
 <!-- Preloader -->
 <div id="preloader">
     <div class="loader"></div>
@@ -22,269 +23,233 @@
         document.body.classList.remove("no-scroll");
     });
 
-    // Block scrolling when page is loading
     document.body.classList.add("no-scroll");
-    </script>
+</script>
 
-    <header class="header">
-        <a href="index.html" class="logo">H</a>
-        <div class="menu-icon" onclick="toggleNavbar()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#education">Education</a>
-            <a href="index.html#skills">Skills</a>
-            <div class="dropdown">
-                <a href="#" id="projects-link" class="active">Video Editing Projects</a>
-                <div class="dropdown-content" id="projects-dropdown">
-                    <a href="GD.html">Designing Projects</a>
-                    <a href="gallery.html">Photography</a>
-                    <a href="portfolio.html">Video Editing Projects</a>
-                    <a href="codings.html">Coding Projects</a>
-                </div>
-            </div>
-            <a href="index.html#contact">Contact</a> 
-        </nav>
-    </header>
-
-    <!-- Video Editing Portfolio -->
-    <section class="portfolio" id="portfolio">
-        <div class="center-text">
-            <h2 class="heading">Video <span>Editing Projects</span></h2>
-        </div>
-        <div class="portfolio-content">
-
-            <!-- Video Project 1 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1KrxnRKOiMToIntze6B1bb2bilLR_wGWP">
-                    <video class="hover-video" muted loop playsinline preload="auto" poster="Thumbnails/CPU.png">
-                        <source src="https://drive.google.com/uc?export=preview&id=1KrxnRKOiMToIntze6B1bb2bilLR_wGWP" type="video/mp4">
-                    </video>
-                </div>
-                <h4>CPU’S GREEN LEGACY – A documentary on conservation and coexistence.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1KrxnRKOiMToIntze6B1bb2bilLR_wGWP">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project 2 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="18q2dqdj88DV6pe57nIfl8vJtyI-snTBF">
-                    <video class="hover-video" muted loop playsinline preload="auto" poster="Thumbnails/Aagaaz.png">
-                        <source src="https://drive.google.com/uc?export=preview&id=18q2dqdj88DV6pe57nIfl8vJtyI-snTBF" type="video/mp4">
-                    </video>
-                </div>
-                <h4>AAGAAZ – An intriguing announcement for the fresher’s party, revealed as a treasure hunt game.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="18q2dqdj88DV6pe57nIfl8vJtyI-snTBF">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project  -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1oVOaWPd_gmvIh6iLYQ6fAJ4qWMShlVXV">
-                    <video class="hover-video" muted loop playsinline preload="auto" poster="Thumbnails/ADIEU1.png">
-                        <source src="https://drive.google.com/uc?export=preview&id=1oVOaWPd_gmvIh6iLYQ6fAJ4qWMShlVXV" type="video/mp4">
-                    </video>
-                </div>
-                <h4>ADIEU’24 – A farewell-themed cinematic edit capturing memorable moments.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1oVOaWPd_gmvIh6iLYQ6fAJ4qWMShlVXV">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project 3 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1iRhVRAnfZN_gQy9sE-hQ9S1y0HAiXne7">
-                    <video class="hover-video" muted loop poster="Thumbnails/Kheloutsav.png">
-                        <source src="https://drive.google.com/uc?export=preview&id=1iRhVRAnfZN_gQy9sE-hQ9S1y0HAiXne7" type="video/mp4">
-                    </video>
-                </div>
-                <h4>KHELOUTSAV’24 – A sports fest short film showcasing the energy and enthusiasm of participants.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1iRhVRAnfZN_gQy9sE-hQ9S1y0HAiXne7">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project 4 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1QfN8d9izdDIS4Zf8V-jf1sIp27BxET64">
-                    <video class="hover-video" muted loop poster="Thumbnails/khelutsav_promo.png">
-                        <source src="https://drive.google.com/uc?export=preview&id=1QfN8d9izdDIS4Zf8V-jf1sIp27BxET64" type="video/mp4">
-                    </video>
-                </div>
-                <h4>KHELOUTSAV 2024 – An exciting promo video building anticipation for the upcoming Khelutsav fest.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1QfN8d9izdDIS4Zf8V-jf1sIp27BxET64">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project 5 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1uoRnfgZQiFOq1GUmi5KzPck7bp0ENrOe">
-                    <video class="hover-video" muted loop poster="Thumbnails/fotografia_promo.png">
-                        <source src="https://drive.google.com/uc?export=preview&id=1uoRnfgZQiFOq1GUmi5KzPck7bp0ENrOe" type="video/mp4">
-                    </video>
-                </div>
-                <h4>FOTOGRAFIA CLUB – A glimpse into the creative world of photography and visual storytelling.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1uoRnfgZQiFOq1GUmi5KzPck7bp0ENrOe">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project 6 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1c45kr2wF6gE1xkRC3Wwi2qPXimS7EXAg">
-                    <video class="hover-video" muted loop poster="Thumbnails/Tu hai kahan.jpg">
-                        <source src="https://drive.google.com/uc?export=preview&id=1c45kr2wF6gE1xkRC3Wwi2qPXimS7EXAg" type="video/mp4">
-                    </video>
-                </div>
-                <h4>TU HAI KAHAN – A music video featuring a nostalgic or emotional theme.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1c45kr2wF6gE1xkRC3Wwi2qPXimS7EXAg">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project 7 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1IY7bbGxAsb5w2lK8BR6vCoSn0CN4EvD1">
-                    <video class="hover-video" muted loop poster="Thumbnails/Heeriye.jpg">
-                        <source src="https://drive.google.com/uc?export=preview&id=1IY7bbGxAsb5w2lK8BR6vCoSn0CN4EvD1" type="video/mp4">
-                    </video>
-                </div>
-                <h4>HEERIYE – A short music video project with a storytelling approach.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1IY7bbGxAsb5w2lK8BR6vCoSn0CN4EvD1">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <!-- Video Project 8 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="17JFqD9MvDa8JZKP27YYbFTKtDwFUr1wz">
-                    <video class="hover-video" muted loop poster="Thumbnails/On my way.jpg">
-                        <source src="https://drive.google.com/uc?export=preview&id=17JFqD9MvDa8JZKP27YYbFTKtDwFUr1wz" type="video/mp4">
-                    </video>
-                </div>
-                <h4>ON MY WAY – A short music video with outdoor cinematography and a travel vibe.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="17JFqD9MvDa8JZKP27YYbFTKtDwFUr1wz">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project 9 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1WIQnMdz5BxTniiSxFUB4TvtT_s1xbsPj">
-                    <video class="hover-video" muted loop poster="Thumbnails/DJ Night.jpg">
-                        <source src="https://drive.google.com/uc?export=preview&id=1WIQnMdz5BxTniiSxFUB4TvtT_s1xbsPj" type="video/mp4">
-                    </video>
-                </div>
-                <h4>DJ NIGHT – A vibrant and electrifying recap of Vivo's success party celebration</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1WIQnMdz5BxTniiSxFUB4TvtT_s1xbsPj">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Video Project 9 -->
-            <div class="row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="50" data-aos-offset="5">
-                <div class="video-container" data-video-id="1L58TEvymMg8eYDvUlulHJ7HqQfoK0x3x">
-                    <video class="hover-video" muted loop poster="Thumbnails/KOta.png">
-                        <source src="https://drive.google.com/uc?export=preview&id=1L58TEvymMg8eYDvUlulHJ7HqQfoK0x3x" type="video/mp4">
-                    </video>
-                </div>
-                <h4>KOTA – A dramatic short film edit highlighting the essence of the Kota city.</h4>
-                <div class="link">
-                    <a href="#" class="watch-now" data-video-id="1L58TEvymMg8eYDvUlulHJ7HqQfoK0x3x">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-
-
-        </div>
-    </section>
-
-    <!-- Popup Video Player -->
-    <div id="video-popup" class="popup">
-        <div class="popup-content">
-            <span class="close">&times;</span>
-            <iframe id="popup-video" src="" frameborder="0" allowfullscreen></iframe>
-        </div>
+<header class="header">
+    <a href="index.html" class="logo">H</a>
+    <div class="menu-icon" onclick="toggleNavbar()">
+        <i class="fa-solid fa-bars"></i>
     </div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#skills">Skills</a>
+        <div class="dropdown">
+            <a href="#" id="projects-link" class="active">Video Editing Projects</a>
+            <div class="dropdown-content" id="projects-dropdown">
+                <a href="GD.html">Designing Projects</a>
+                <a href="gallery.html">Photography</a>
+                <a href="portfolio.html">Video Editing Projects</a>
+                <a href="codings.html">Coding Projects</a>
+            </div>
+        </div>
+        <a href="index.html#contact">Contact</a> 
+    </nav>
+</header>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    const videoContainers = document.querySelectorAll(".video-container");
-    const watchNowButtons = document.querySelectorAll(".watch-now");
-    const popup = document.getElementById("video-popup");
-    const popupVideo = document.getElementById("popup-video");
-    const closePopup = document.querySelector(".popup .close");
+<!-- Video Editing Portfolio -->
+<section class="portfolio" id="portfolio">
+    <div class="center-text">
+        <h2 class="heading">Video <span>Editing Projects</span></h2>
+    </div>
+    <div class="portfolio-content">
 
-    // Play video on hover
-    videoContainers.forEach(container => {
-        const video = container.querySelector(".hover-video");
-         // Ensure the video is loaded before playing
-            video.addEventListener("canplaythrough", () => {
-            console.log("Video is ready to play:", video.src);
+        <!-- Video Project 1 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="UsR7Ned3QhA">
+                <img class="hover-video" src="https://img.youtube.com/vi/UsR7Ned3QhA/maxresdefault.jpg" alt="CPU’S GREEN LEGACY">
+            </div>
+            <h4>CPU’S GREEN LEGACY – A documentary on conservation and coexistence.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="UsR7Ned3QhA">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 2 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="Db0GIc35qT4">
+                <img class="hover-video" src="https://img.youtube.com/vi/Db0GIc35qT4/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>AAGAAZ – An intriguing announcement for the fresher’s party, revealed as a treasure hunt game.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="Db0GIc35qT4">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 3 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="6AVbD56jcY0">
+                <img class="hover-video" src="https://img.youtube.com/vi/6AVbD56jcY0/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>ADIEU’24 – A farewell-themed cinematic edit capturing memorable moments.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="6AVbD56jcY0">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 4 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="lbFxZDDT-_o">
+                <img class="hover-video" src="https://img.youtube.com/vi/lbFxZDDT-_o/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>DAF2025 - A glimpse into the Digitech Award Festival. Celebrating 4 years of innovation & exellence.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="lbFxZDDT-_o">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 5 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="lkMnxwMktX0">
+                <img class="hover-video" src="https://img.youtube.com/vi/lkMnxwMktX0/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>KHELOUTSAV’24 – A sports fest short film showcasing the energy and enthusiasm of participants.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="lkMnxwMktX0">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 6 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="AdpNqXT2J9U">
+                <img class="hover-video" src="https://img.youtube.com/vi/AdpNqXT2J9U/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>KHELOUTSAV 2024 – An exciting promo video building anticipation for the upcoming Khelutsav fest.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="AdpNqXT2J9U">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 7 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="UnRFS1YE9SA">
+                <img class="hover-video" src="https://img.youtube.com/vi/UnRFS1YE9SA/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>FOTOGRAFIA CLUB – A glimpse into the creative world of photography and visual storytelling.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="UnRFS1YE9SA">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 8 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="nIJRUozLPy4">
+                <img class="hover-video" src="https://img.youtube.com/vi/nIJRUozLPy4/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>TU HAI KAHAN – A music video featuring a nostalgic or emotional theme.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="nIJRUozLPy4">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <!-- Video Project 9 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="cFzMoIwBFoY">
+                <img class="hover-video" src="https://img.youtube.com/vi/cFzMoIwBFoY/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>HEERIYE – A short music video project with a storytelling approach.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="cFzMoIwBFoY">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 10 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="9sdN_cBGnek">
+                <img class="hover-video" src="https://img.youtube.com/vi/9sdN_cBGnek/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>ON MY WAY – A short music video with outdoor cinematography and a travel vibe.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="9sdN_cBGnek">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 11 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="XYOGh4SqYhs">
+                <img class="hover-video" src="https://img.youtube.com/vi/XYOGh4SqYhs/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>DJ NIGHT – A vibrant and electrifying recap of Vivo's success party celebration</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="XYOGh4SqYhs">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Video Project 12 -->
+        <div class="row" data-aos="zoom-in" data-aos-duration="600">
+            <div class="video-container" data-video-id="y2irPsn7FjA">
+                <img class="hover-video" src="https://img.youtube.com/vi/y2irPsn7FjA/maxresdefault.jpg" alt="AAGAAZ">
+            </div>
+            <h4>KOTA – A dramatic short film edit highlighting the essence of the Kota city.</h4>
+            <div class="link">
+                <a href="#" class="watch-now" data-video-id="y2irPsn7FjA">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <!-- Add More Video Projects Here (Replace YOUR_VIDEO_ID_X) -->
+
+    </div>
+</section>
+
+<!-- Popup Video Player -->
+<div id="video-popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <iframe id="popup-video" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const watchNowButtons = document.querySelectorAll(".watch-now");
+        const popup = document.getElementById("video-popup");
+        const popupVideo = document.getElementById("popup-video");
+        const closePopup = document.querySelector(".popup .close");
+
+        // Open popup video player
+        watchNowButtons.forEach(button => {
+            button.addEventListener("click", function (event) {
+                event.preventDefault();
+                const videoId = this.getAttribute("data-video-id");
+                popupVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&showinfo=0`;
+                popup.style.display = "block";
+            });
         });
-        container.addEventListener("mouseenter", function () {
-            if (video.readyState >= 2) {  // Ensure video is ready
-                video.muted = true;
-                video.play().catch(error => console.log("Autoplay Blocked:", error));
-            }
-        });
 
-        container.addEventListener("mouseleave", function () {
-            video.pause();
-            video.currentTime = 0;
-        });
-    });
-
-    // Open popup video player
-    watchNowButtons.forEach(button => {
-        button.addEventListener("click", function (event) {
-            event.preventDefault();
-            const videoId = this.getAttribute("data-video-id");
-            popupVideo.src = `https://drive.google.com/file/d/${videoId}/preview`;
-            popup.style.display = "block";
-        });
-    });
-
-    // Close popup
-    closePopup.addEventListener("click", function () {
-        popup.style.display = "none";
-        popupVideo.src = "";
-    });
-
-    // Close popup when clicking outside
-    popup.addEventListener("click", function (event) {
-        if (event.target === popup) {
+        // Close popup
+        closePopup.addEventListener("click", function () {
             popup.style.display = "none";
             popupVideo.src = "";
-        }
-    });
-});
+        });
 
-    </script>
+        // Close popup when clicking outside
+        popup.addEventListener("click", function (event) {
+            if (event.target === popup) {
+                popup.style.display = "none";
+                popupVideo.src = "";
+            }
+        });
+    });
+</script>
 
 <script>
     function toggleNavbar() {
-const navbar = document.querySelector('.navbar');
-navbar.classList.toggle('active');
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
 
-const navLinks = document.querySelectorAll('.navbar a');
-navLinks.forEach(link => {
-link.addEventListener('click', () => {
-const navbar = document.querySelector('.navbar');
-navbar.classList.remove('active'); // Hide the navbar
-});
-});
-}
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+            });
+        });
+    }
 </script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<script>AOS.init();</script>
+
 <script>
     // Disable Right-Click
     document.addEventListener("contextmenu", function(event) {
@@ -311,6 +276,5 @@ navbar.classList.remove('active'); // Hide the navbar
     });
 </script>
 
-    <script src="main.js"></script>
 </body>
 </html>

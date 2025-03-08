@@ -1,4 +1,104 @@
+/* Video Container for YouTube Thumbnails */
 .video-container {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container img {
+    width: 100%;
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.video-container:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Popup Video Player */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.popup-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-content iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Close Button */
+.popup .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    border-radius: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.popup .close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .popup {
+        width: 95%;
+        height: 70%;
+    }
+
+    .popup .close {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        width: 100%;
+        height: 60%;
+    }
+
+    .popup .close {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+}
+
+
+/* .video-container {
     width: 100%;
     height: 250px;
     position: relative;
@@ -27,7 +127,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    /* padding: 50px; */
+    /* padding: 50px; 
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -60,4 +160,4 @@
 }
 .popup .close:hover{
     background: rgba(255, 255, 255, 0.148);
-}
+} */

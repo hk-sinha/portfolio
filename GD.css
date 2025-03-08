@@ -131,11 +131,11 @@ section{
 
 }
 .row img{
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 420px;
     border-radius: 14px;
     margin-bottom: 1.4;
-    object-fit: cover;
+    /* object-fit: contain; */
 }
 .row{
     background: var(--second-bg-color);
