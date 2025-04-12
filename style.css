@@ -133,7 +133,7 @@ section{
 
 /* Hover Effect */
 .portfolio-grid div:hover img {
-    transform: scale(2.5);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
