@@ -12,6 +12,9 @@
     border: none;
     scroll-behavior: smooth;
 }
+* {
+    -webkit-tap-highlight-color: transparent !important;
+}
 :root{
     --bg-color: #000000;
     --second-bg-color: #302f2f;
