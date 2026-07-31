@@ -293,6 +293,9 @@ async function loadProfile() {
             document.getElementById('profile-email').value = data.email || '';
             document.getElementById('profile-phone').value = data.phone || '';
             document.getElementById('profile-resume').value = data.resumeLink || '';
+            if (document.getElementById('profile-copyright')) {
+                document.getElementById('profile-copyright').value = data.copyright || '';
+            }
         }
     } catch (e) {
         console.error("Error loading profile", e);
@@ -307,6 +310,7 @@ document.getElementById('save-profile-btn').addEventListener('click', async () =
     const email = document.getElementById('profile-email').value;
     const phone = document.getElementById('profile-phone').value;
     const resumeLink = document.getElementById('profile-resume').value;
+    const copyright = document.getElementById('profile-copyright') ? document.getElementById('profile-copyright').value : '';
     const msg = document.getElementById('save-profile-msg');
 
     try {
@@ -314,7 +318,7 @@ document.getElementById('save-profile-btn').addEventListener('click', async () =
         msg.style.color = "#ccc";
 
         await setDoc(doc(db, "settings", "profile"), {
-            about, address, locationLink, email, phone, resumeLink
+            about, address, locationLink, email, phone, resumeLink, copyright
         });
 
         msg.textContent = "Profile saved successfully!";

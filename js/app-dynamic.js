@@ -35,6 +35,11 @@ async function loadDynamicContent() {
             if (resumeEl && data.resumeLink) {
                 resumeEl.href = data.resumeLink;
             }
+
+            const copyrightEls = document.querySelectorAll('.dynamic-copyright');
+            if (copyrightEls.length > 0 && data.copyright) {
+                copyrightEls.forEach(el => el.innerHTML = data.copyright);
+            }
         }
     } catch (e) {
         console.error("Error loading profile details:", e);
