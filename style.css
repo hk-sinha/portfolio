@@ -1617,38 +1617,3 @@ footer p {
         right: auto;
     }
 }
-
-/* Landing Page Section Stacking Effect */
-.stack-area {
-    position: relative;
-}
-
-section.home, section.about, section#portfolio {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    background: var(--bg-color);
-    isolation: isolate;
-}
-
-/* The last section should NOT be sticky so it scrolls up naturally, bringing the footer with it */
-section.services {
-    position: relative;
-    min-height: 100vh;
-    background: var(--bg-color);
-    isolation: isolate;
-}
-
-/* Hide scrollbar for stacked sections so it looks seamless */
-section.home::-webkit-scrollbar, 
-section.about::-webkit-scrollbar, 
-section#portfolio::-webkit-scrollbar {
-    display: none;
-}
-
-section.home, section.about, section#portfolio {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
