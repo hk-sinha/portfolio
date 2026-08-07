@@ -49,7 +49,7 @@ async function loadDynamicContent() {
     const latestWorksContainer = document.getElementById('dynamic-latest-works');
     if (latestWorksContainer) {
         try {
-            const q = query(collection(db, "projects"), orderBy("timestamp", "desc"), limit(10));
+            const q = query(collection(db, "projects"), orderBy("timestamp", "desc"), limit(5));
             const querySnapshot = await getDocs(q);
 
             if (!querySnapshot.empty) {
@@ -66,7 +66,7 @@ async function loadDynamicContent() {
                     const html = `
                     <div class="video-item ${shapeClass}">
                         <a href="portfolio.html">
-                            <img src="${imgUrl}" alt="${data.title}" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="10" data-aos-offset="1">
+                            <img src="${imgUrl}" alt="${data.title}" data-aos="zoom-in" data-aos-duration="100" data-aos-delay="2" data-aos-offset="0">
                         </a>
                     </div>
                     `;
